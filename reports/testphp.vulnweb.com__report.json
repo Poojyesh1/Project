@@ -1,0 +1,415 @@
+{
+    "target": "http://testphp.vulnweb.com/",
+    "total_urls_visited": 49,
+    "vulnerabilities_found": 68,
+    "vulnerabilities": [
+        {
+            "url": "http://testphp.vulnweb.com/userinfo.php",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'XSS')</script>' AND pass='<script>alert('XSS')</script>'' "
+        },
+        {
+            "url": "http://testphp.vulnweb.com/userinfo.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/secured/newuser.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\r\n<html>\r\n<head>\r\n<title>add new user</title>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html;"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/userinfo.php",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'XSS')</script>' AND pass='<script>alert('XSS')</script>'' "
+        },
+        {
+            "url": "http://testphp.vulnweb.com/userinfo.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/guestbook.php",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/guestbook.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/cart.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/cart.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/cart.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/cart.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/cart.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/cart.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/cart.php",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "xss",
+            "payload": "<script>alert('XSS')</script>",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        },
+        {
+            "url": "http://testphp.vulnweb.com/search.php?test=query",
+            "type": "sqli",
+            "payload": "' OR 1=1--",
+            "evidence": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n\"http://www.w3.org/TR/html4/loose.dtd\">\n<html><!-- InstanceBegin template=\"/Templates/main_dynamic_template.dwt.php\" codeOutsideHTMLIsLoc"
+        }
+    ]
+}
